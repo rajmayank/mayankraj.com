@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmayank_raj=self.webpackChunkmayank_raj||[]).push([[903],{2592:function(n,e,a){function u(){return"undefined"!=typeof window&&(window.location.href="/Mayank_Raj_Resume.pdf"),"<h1> Resume </h1>"}a.r(e),a.d(e,{default:function(){return u}})}}]);
+//# sourceMappingURL=component---src-pages-resume-js-9fc5db969d1df822261b.js.map
