@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Rss | Mayank Raj]]></title><description><![CDATA[Solutions architect lorem ipsum]]></description><link>https://mayankraj.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 01 Oct 2021 17:07:23 GMT</lastBuildDate><item><title><![CDATA[Of Aspirations and Achievements- Front-end Intern to Solutions Architect in 3.5 Years]]></title><link>https://mayankraj.com/blog/career-update</link><guid isPermaLink="false">https://mayankraj.com/blog/career-update</guid><pubDate>Tue, 14 Jan 2020 19:40:46 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Demystifying JavaScript Closures]]></title><link>https://mayankraj.com/blog/javascript-closures</link><guid isPermaLink="false">https://mayankraj.com/blog/javascript-closures</guid><pubDate>Sat, 30 Nov 2019 19:40:46 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Managing Continuous Integration Pipelines with Jenkins]]></title><link>https://mayankraj.com/blog/cicd-with-jenkins</link><guid isPermaLink="false">https://mayankraj.com/blog/cicd-with-jenkins</guid><pubDate>Tue, 11 Jun 2019 19:40:46 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Generating Synthetic Music with JavaScript - Introduction to Neural Networks]]></title><link>https://mayankraj.com/blog/synthetic-music-with-neural-networks</link><guid isPermaLink="false">https://mayankraj.com/blog/synthetic-music-with-neural-networks</guid><pubDate>Wed, 17 Apr 2019 19:40:46 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[How To Build a Search Bar with RxJS]]></title><link>https://mayankraj.com/blog/searchbar-with-rxjs</link><guid isPermaLink="false">https://mayankraj.com/blog/searchbar-with-rxjs</guid><pubDate>Wed, 17 Apr 2019 19:40:46 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Automating windows with COM object]]></title><description><![CDATA[A few weeks ago I got a project wherein I had to get various statistical data about a document. One of the important parameters was to get a…]]></description><link>https://mayankraj.com/blog/automation-with-windows-com</link><guid isPermaLink="false">https://mayankraj.com/blog/automation-with-windows-com</guid><pubDate>Sat, 01 Dec 2018 16:54:41 GMT</pubDate><content:encoded>&lt;p&gt;A few weeks ago I got a project wherein I had to get various statistical data about a document. One of the important parameters was to get a precise count of grammatical errors in the document. I tried to go the open source way and tested out &lt;a href=&quot;https://www.languagetool.org/&quot;&gt;LanguageTool&lt;/a&gt;, &lt;a href=&quot;http://proselint.com/&quot;&gt;PorseLink&lt;/a&gt; among others. None of these were up to the mark of the good old MS-Word.
+So I had to now work on a way to problematically access Word, load a document in it and get the statistics.&lt;/p&gt;
+&lt;p&gt;Python being versatile and great at memory management, we would be using it to control COM object and do what we need to do.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;This is the Part 1 of the two series post.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Part 1&lt;/strong&gt; : Introduction to &lt;code&gt;COMobject&lt;/code&gt;, initialization, examples etc&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Part 2&lt;/strong&gt; : Setting up a server environment. Making use of threads and opening using thread for each process. This is how to communicate with the &lt;code&gt;COMobject&lt;/code&gt; in a multi-thread environment as it cannot be passed to a thread directly.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1&gt;Before we dig deep, what is COMobject ?&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The Microsoft Component Object Model (COM) is a platform-independent, distributed, object-oriented system for creating binary software components that can interact. COM is the foundation technology for Microsoft&apos;s OLE (compound documents), ActiveX (Internet-enabled components), as well as others. &lt;a href=&quot;https://msdn.microsoft.com/en-us/library/windows/desktop/ms694363(v=vs.85).aspx&quot;&gt;read more...&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In a nutshell it can be used to control various aspects of Windows. We would be focusing on using the &lt;code&gt;COMobject&lt;/code&gt; to control MS-Office applications like Word and Excel. Although it is not limited to just MS-Office applications, it can be used to communicate with other softwares like IE (if you&apos;re still into it...)&lt;/p&gt;
+&lt;p&gt;You can do things like :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create triggers to perform various tasks
+&lt;ul&gt;
+&lt;li&gt;Add new rows to an excel sheet in real time with the current scores of a game. This excel sheet can then have some complex algorithms to predict which team would win by performing calculations on all the rows. Although it can be done with implementation in even NodeJS but we don&apos;t want to take the pain to port the functions/macros from Excel to JS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Log the current changes made by the user XYZ in the database&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The possibilities are limitless. I guess you already have a use case in mind and landing to this page to know the process, if not it&apos;s always good to know if there is possibility to get a certain functionality done.&lt;/p&gt;
+&lt;h1&gt;Python and COM&lt;/h1&gt;
+&lt;p&gt;We will need the following tools to communicate with MS-Word :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;MS Office or Specific applications already installed&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://pypi.python.org/pypi/pywin32&quot;&gt;PyWin32 library&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;PyWin32&lt;/code&gt; is a great library that gives us the same set of methods/properties that are exposed by COM which are natively in Visual Basic for Applications (VBA).&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;NOTE: I&apos;m using Python3 in the code samples in this guide.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Let&apos;s start&lt;/h2&gt;
+&lt;p&gt;To get hold of a COM object&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;import win32com.client
+
+# for MS-Word
+word = win32.gencache.EnsureDispatch(&apos;Word.Application&apos;)
+# OR
+word = win32com.client.DispatchEx(&apos;Word.Application&apos;)
+
+# for MS-Excel
+excel = win32.gencache.EnsureDispatch(&apos;Excel.Application&apos;)
+# OR
+excel = win32com.client.DispatchEx(&apos;Excel.Application&apos;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;There are some key differences to be noted here&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;EnsureDispatch&lt;/code&gt; : In dead simple terms, it makes sure that a object which references the specified application is returned. If the application is already open, it will return the same instance, if not it will start a instance and return it.
+It is useful in cases where you would want to make use of single application that holds certain meta-data, over the life of the process.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;DispatchEx&lt;/code&gt; : For each call, you would get a new object returned. This would mean that if you call it 7 times, you would see 7 instances of MS-Word in task manager.
+It makes sense to get independent instances when you would want to handle each process independently and close the application when one process completes.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Understand that if you run a web-server that takes in data, puts it in an Excel, runs a macro and return a result. You would want to have a dedicated instance of Excel for each process so that you can close it as soon as the response is ready. If you used &lt;code&gt;EnsureDispatch&lt;/code&gt; or &lt;code&gt;Dispatch&lt;/code&gt;, that would mean that at the end of each process, you would have to check if any other process is in progress, if not shut down the application.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It&apos;s requires a bit extra memory but helps to keep memory leak in check as using same application instance to load up multiple files that do not require each others data, means that with each load, some meta-data is loaded which is not cleared when closing the process and it builds up over time. &lt;em&gt;We will cover this aspect in detail in the Part-2 of the post.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Coming back to the point, let&apos;s go ahead.&lt;/p&gt;
+&lt;p&gt;Now that we have the &lt;code&gt;COMobject&lt;/code&gt; we can use it a open a Word Document.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;doc = word.Documents.Open( os.path.join( os.getcwd(), &apos;path/to/files/&apos;, filename), ReadOnly=True)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;NOTE : As you might have had guessed, you can use the same &lt;code&gt;word&lt;/code&gt; object to open multiple &lt;code&gt;doc&lt;/code&gt; objects. This is what I was referring to using same application to open multiple documents in the last paragraph&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;p&gt;At this point, we can refer to Microsoft&apos;s documentation to get gist of various properties &amp;#x26; functions available.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://msdn.microsoft.com/en-us/library/bb244391(v=office.12).aspx&quot;&gt;&lt;strong&gt;Word 2007 Developers Reference&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://msdn.microsoft.com/en-us/library/bb244515(v=office.12).aspx&quot;&gt;&lt;strong&gt;Word Object Model reference&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://msdn.microsoft.com/en-us/library/bb244569(v=office.12).aspx&quot;&gt;&lt;strong&gt;Application Object&lt;/strong&gt;&lt;/a&gt; : List of methods and properties available&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Let&apos;s have look at some usage examples:&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Make the application window invisible :&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;word.Visible = False
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To add a new Document&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;doc = word.Documents.Add()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To get all the grammatical or spelling errors&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;grammaticalErrors = doc.GrammaticalErrors
+spellingErrors = doc.doc.SpellingErrors
+
+#or to simple get the count
+grammaticalErrorsCount = doc.GrammaticalErrors.Count
+spellingErrorsCount = doc.SpellingErrors.Count
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you have a look at the &lt;a href=&quot;https://msdn.microsoft.com/en-us/library/bb237490(v=office.12).aspx&quot;&gt;&lt;strong&gt;Word BuiltInProperty&lt;/strong&gt;&lt;/a&gt;, you&apos;ll see you can do the following&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;wordCount = int(doc.BuiltInDocumentProperties(15))
+characterCount = int(doc.BuiltInDocumentProperties(16))
+paragraphCount = int(doc.BuiltInDocumentProperties(24))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;or do something much more complex as&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;characterPerWord = doc.ReadabilityStatistics(&quot;Characters per Word&quot;).Value
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;or something as simple as&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;shapeCount = doc.Shapes.Count
+tableCount = doc.Tables.Count
+sentenceCount = doc.Sentences.Count
+tableOfContentCount = doc.TablesOfContents.Count
+
+#loop through each paragraphs
+for paras in doc.Paragraphs:
+    # paras will now be each individual paragraph
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;As you can see the possibilities are endless. MS-Office tools are pretty powerful in what they do. We did not even dig into the excel territory. Majority of the questions on stackoverflow are based on excel as automating tasks there makes can be of great use.&lt;/p&gt;
+&lt;p&gt;In the next post we will focus on how to wrap all this up into dedicated thread for each process and word with COMobject in threads.&lt;/p&gt;</content:encoded></item></channel></rss>

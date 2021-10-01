@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-components-blog-post-js",
+    "path": "/blog/cicd-with-jenkins",
+    "result": {"data":{"site":{"siteMetadata":{"title":"MayankRaj"}},"markdownRemark":{"id":"94ad92c5-27dd-517c-965b-544e72166626","excerpt":"","html":"","frontmatter":{"title":"Managing Continuous Integration Pipelines with Jenkins","date":"June 11, 2019","basecolor":null,"author":null,"enablecomments":null,"category":"Automation","bgimage":null,"external_link":"https://auth0.com/blog/continuous-integration-and-continuous-deployment-with-jenkins/","external_site_name":"Auth0 Blog","external_site_link":"https://auth0.com/blog","page_slug":"/blog/cicd-with-jenkins"}}},"pageContext":{"slug":"/cicd-with-jenkins/","previous":{"fields":{"slug":"/synthetic-music/"},"frontmatter":{"title":"Generating Synthetic Music with JavaScript - Introduction to Neural Networks","page_slug":"/blog/synthetic-music-with-neural-networks"}},"next":{"fields":{"slug":"/js-closures/"},"frontmatter":{"title":"Demystifying JavaScript Closures","page_slug":"/blog/javascript-closures"}}}},
+    "staticQueryHashes": ["63159454"]}

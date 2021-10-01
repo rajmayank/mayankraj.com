@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-components-blog-post-js",
+    "path": "/blog/javascript-closures",
+    "result": {"data":{"site":{"siteMetadata":{"title":"MayankRaj"}},"markdownRemark":{"id":"6bb484b5-401a-5f53-81fa-a66ae0e40bf6","excerpt":"","html":"","frontmatter":{"title":"Demystifying JavaScript Closures","date":"November 30, 2019","basecolor":null,"author":null,"enablecomments":null,"category":"JavaScript","bgimage":null,"external_link":"https://medium.com/cactus-techblog/demystifying-javascript-closures-2628c807bf18","external_site_name":"Cactus Tech Blog","external_site_link":"https://medium.com/cactus-techblog","page_slug":"/blog/javascript-closures"}}},"pageContext":{"slug":"/js-closures/","previous":{"fields":{"slug":"/cicd-with-jenkins/"},"frontmatter":{"title":"Managing Continuous Integration Pipelines with Jenkins","page_slug":"/blog/cicd-with-jenkins"}},"next":{"fields":{"slug":"/cactus-story/"},"frontmatter":{"title":"Of Aspirations and Achievements- Front-end Intern to Solutions Architect in 3.5 Years","page_slug":"/blog/career-update"}}}},
+    "staticQueryHashes": ["63159454"]}
