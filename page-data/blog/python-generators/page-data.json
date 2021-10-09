@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-components-blog-post-js",
+    "path": "/blog/python-generators",
+    "result": {"data":{"site":{"siteMetadata":{"title":"MayankRaj"}},"markdownRemark":{"id":"48c2eab9-b349-52b3-9355-daa53b143011","excerpt":"","html":"","frontmatter":{"title":"Python Building Blocks - Generators","date":"July 15, 2021","basecolor":null,"author":null,"enablecomments":null,"category":"Python Fundamentals","bgimage":null,"external_link":"https://medium.com/cactus-techblog/python-building-blocks-generators-f747717a0bf4","external_site_name":"Cactus Tech Blog","external_site_link":"https://medium.com/cactus-techblog","page_slug":"/blog/python-generators"}}},"pageContext":{"slug":"/python-generators/","previous":{"fields":{"slug":"/cactus-story/"},"frontmatter":{"title":"Of Aspirations and Achievements- Front-end Intern to Solutions Architect in 3.5 Years","page_slug":"/blog/career-update"}},"next":{"fields":{"slug":"/cactus-story-update/"},"frontmatter":{"title":"An Associate Director talks opportunities, flexibility, and work culture at CACTUS Tech","page_slug":"/blog/cactustech-interview"}}}},
+    "staticQueryHashes": ["63159454"]}
