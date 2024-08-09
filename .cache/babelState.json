@@ -1,0 +1,172 @@
+{
+  "stages": {
+    "develop": {
+      "plugins": [
+        {
+          "name": "@sigmacomputing/babel-plugin-lodash",
+          "options": {}
+        },
+        {
+          "name": "/home/runner/work/mayankraj.com/mayankraj.com/.yarn/__virtual__/gatsby-plugin-image-virtual-f849e9283e/4/.yarn/berry/cache/gatsby-plugin-image-npm-3.13.1-b98f59f6b2-10c0.zip/node_modules/gatsby-plugin-image/dist/babel-plugin-parse-static-images.js",
+          "options": {
+            "cacheDir": "/home/runner/work/mayankraj.com/mayankraj.com/.cache/caches/gatsby-plugin-image"
+          }
+        },
+        {
+          "name": "/home/runner/work/mayankraj.com/mayankraj.com/.yarn/__virtual__/@babel-plugin-proposal-optional-chaining-virtual-50095c0597/4/.yarn/berry/cache/@babel-plugin-proposal-optional-chaining-npm-7.21.0-cdbb1b2888-10c0.zip/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/home/runner/work/mayankraj.com/mayankraj.com/.yarn/__virtual__/@babel-plugin-proposal-nullish-coalescing-operator-virtual-ed20afb314/4/.yarn/berry/cache/@babel-plugin-proposal-nullish-coalescing-operator-npm-7.18.6-cf22ea8526-10c0.zip/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/home/runner/work/mayankraj.com/mayankraj.com/.yarn/__virtual__/@babel-plugin-proposal-numeric-separator-virtual-2d1e72fb79/4/.yarn/berry/cache/@babel-plugin-proposal-numeric-separator-npm-7.18.6-cfcd55888a-10c0.zip/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
+          "options": {}
+        }
+      ],
+      "presets": [
+        {
+          "name": "/home/runner/work/mayankraj.com/mayankraj.com/.yarn/__virtual__/@babel-preset-typescript-virtual-4346f3ec0d/4/.yarn/berry/cache/@babel-preset-typescript-npm-7.24.7-5b4c13cc4a-10c0.zip/node_modules/@babel/preset-typescript/lib/index.js",
+          "options": {
+            "plugins": [],
+            "allExtensions": false,
+            "isTSX": false,
+            "jsxPragma": "React"
+          }
+        }
+      ],
+      "options": {
+        "cacheDirectory": true,
+        "sourceType": "unambiguous"
+      }
+    },
+    "develop-html": {
+      "plugins": [
+        {
+          "name": "@sigmacomputing/babel-plugin-lodash",
+          "options": {}
+        },
+        {
+          "name": "/home/runner/work/mayankraj.com/mayankraj.com/.yarn/__virtual__/gatsby-plugin-image-virtual-f849e9283e/4/.yarn/berry/cache/gatsby-plugin-image-npm-3.13.1-b98f59f6b2-10c0.zip/node_modules/gatsby-plugin-image/dist/babel-plugin-parse-static-images.js",
+          "options": {
+            "cacheDir": "/home/runner/work/mayankraj.com/mayankraj.com/.cache/caches/gatsby-plugin-image"
+          }
+        },
+        {
+          "name": "/home/runner/work/mayankraj.com/mayankraj.com/.yarn/__virtual__/@babel-plugin-proposal-optional-chaining-virtual-50095c0597/4/.yarn/berry/cache/@babel-plugin-proposal-optional-chaining-npm-7.21.0-cdbb1b2888-10c0.zip/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/home/runner/work/mayankraj.com/mayankraj.com/.yarn/__virtual__/@babel-plugin-proposal-nullish-coalescing-operator-virtual-ed20afb314/4/.yarn/berry/cache/@babel-plugin-proposal-nullish-coalescing-operator-npm-7.18.6-cf22ea8526-10c0.zip/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/home/runner/work/mayankraj.com/mayankraj.com/.yarn/__virtual__/@babel-plugin-proposal-numeric-separator-virtual-2d1e72fb79/4/.yarn/berry/cache/@babel-plugin-proposal-numeric-separator-npm-7.18.6-cfcd55888a-10c0.zip/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
+          "options": {}
+        }
+      ],
+      "presets": [
+        {
+          "name": "/home/runner/work/mayankraj.com/mayankraj.com/.yarn/__virtual__/@babel-preset-typescript-virtual-4346f3ec0d/4/.yarn/berry/cache/@babel-preset-typescript-npm-7.24.7-5b4c13cc4a-10c0.zip/node_modules/@babel/preset-typescript/lib/index.js",
+          "options": {
+            "plugins": [],
+            "allExtensions": false,
+            "isTSX": false,
+            "jsxPragma": "React"
+          }
+        }
+      ],
+      "options": {
+        "cacheDirectory": true,
+        "sourceType": "unambiguous"
+      }
+    },
+    "build-html": {
+      "plugins": [
+        {
+          "name": "@sigmacomputing/babel-plugin-lodash",
+          "options": {}
+        },
+        {
+          "name": "/home/runner/work/mayankraj.com/mayankraj.com/.yarn/__virtual__/gatsby-plugin-image-virtual-f849e9283e/4/.yarn/berry/cache/gatsby-plugin-image-npm-3.13.1-b98f59f6b2-10c0.zip/node_modules/gatsby-plugin-image/dist/babel-plugin-parse-static-images.js",
+          "options": {
+            "cacheDir": "/home/runner/work/mayankraj.com/mayankraj.com/.cache/caches/gatsby-plugin-image"
+          }
+        },
+        {
+          "name": "/home/runner/work/mayankraj.com/mayankraj.com/.yarn/__virtual__/@babel-plugin-proposal-optional-chaining-virtual-50095c0597/4/.yarn/berry/cache/@babel-plugin-proposal-optional-chaining-npm-7.21.0-cdbb1b2888-10c0.zip/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/home/runner/work/mayankraj.com/mayankraj.com/.yarn/__virtual__/@babel-plugin-proposal-nullish-coalescing-operator-virtual-ed20afb314/4/.yarn/berry/cache/@babel-plugin-proposal-nullish-coalescing-operator-npm-7.18.6-cf22ea8526-10c0.zip/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/home/runner/work/mayankraj.com/mayankraj.com/.yarn/__virtual__/@babel-plugin-proposal-numeric-separator-virtual-2d1e72fb79/4/.yarn/berry/cache/@babel-plugin-proposal-numeric-separator-npm-7.18.6-cfcd55888a-10c0.zip/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
+          "options": {}
+        }
+      ],
+      "presets": [
+        {
+          "name": "/home/runner/work/mayankraj.com/mayankraj.com/.yarn/__virtual__/@babel-preset-typescript-virtual-4346f3ec0d/4/.yarn/berry/cache/@babel-preset-typescript-npm-7.24.7-5b4c13cc4a-10c0.zip/node_modules/@babel/preset-typescript/lib/index.js",
+          "options": {
+            "plugins": [],
+            "allExtensions": false,
+            "isTSX": false,
+            "jsxPragma": "React"
+          }
+        }
+      ],
+      "options": {
+        "cacheDirectory": true,
+        "sourceType": "unambiguous"
+      }
+    },
+    "build-javascript": {
+      "plugins": [
+        {
+          "name": "@sigmacomputing/babel-plugin-lodash",
+          "options": {}
+        },
+        {
+          "name": "/home/runner/work/mayankraj.com/mayankraj.com/.yarn/__virtual__/gatsby-plugin-image-virtual-f849e9283e/4/.yarn/berry/cache/gatsby-plugin-image-npm-3.13.1-b98f59f6b2-10c0.zip/node_modules/gatsby-plugin-image/dist/babel-plugin-parse-static-images.js",
+          "options": {
+            "cacheDir": "/home/runner/work/mayankraj.com/mayankraj.com/.cache/caches/gatsby-plugin-image"
+          }
+        },
+        {
+          "name": "/home/runner/work/mayankraj.com/mayankraj.com/.yarn/__virtual__/@babel-plugin-proposal-optional-chaining-virtual-50095c0597/4/.yarn/berry/cache/@babel-plugin-proposal-optional-chaining-npm-7.21.0-cdbb1b2888-10c0.zip/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/home/runner/work/mayankraj.com/mayankraj.com/.yarn/__virtual__/@babel-plugin-proposal-nullish-coalescing-operator-virtual-ed20afb314/4/.yarn/berry/cache/@babel-plugin-proposal-nullish-coalescing-operator-npm-7.18.6-cf22ea8526-10c0.zip/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/home/runner/work/mayankraj.com/mayankraj.com/.yarn/__virtual__/@babel-plugin-proposal-numeric-separator-virtual-2d1e72fb79/4/.yarn/berry/cache/@babel-plugin-proposal-numeric-separator-npm-7.18.6-cfcd55888a-10c0.zip/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
+          "options": {}
+        }
+      ],
+      "presets": [
+        {
+          "name": "/home/runner/work/mayankraj.com/mayankraj.com/.yarn/__virtual__/@babel-preset-typescript-virtual-4346f3ec0d/4/.yarn/berry/cache/@babel-preset-typescript-npm-7.24.7-5b4c13cc4a-10c0.zip/node_modules/@babel/preset-typescript/lib/index.js",
+          "options": {
+            "plugins": [],
+            "allExtensions": false,
+            "isTSX": false,
+            "jsxPragma": "React"
+          }
+        }
+      ],
+      "options": {
+        "cacheDirectory": true,
+        "sourceType": "unambiguous"
+      }
+    }
+  },
+  "browserslist": [
+    ">0.25% and supports es6-module",
+    "not dead and supports es6-module"
+  ]
+}

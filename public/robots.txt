@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://mayankraj.com/sitemap-index.xml
+Host: https://mayankraj.com

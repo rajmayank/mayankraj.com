@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmayankraj_com=self.webpackChunkmayankraj_com||[]).push([[125],{5397:function(e,a,t){t.r(a);var n=t(1467),l=t(1647);a.default=()=>n.createElement("main",null,n.createElement("section",{id:"page-404"},n.createElement("div",{className:"img"}),n.createElement("div",{className:"text"},n.createElement("h1",null,"Have you tried refreshing the page again?"),n.createElement("p",null,"Go ",n.createElement(l.Link,{to:"/"},"Home")))))}}]);
+//# sourceMappingURL=component---src-pages-404-js-f061ca8f35d64557b162.js.map

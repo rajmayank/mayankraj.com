@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmayankraj_com=self.webpackChunkmayankraj_com||[]).push([[163],{5566:function(n,e,a){function u(){return"undefined"!=typeof window&&(window.location.href="/Mayank_Raj_Resume.pdf"),""}a.r(e),a.d(e,{default:function(){return u}})}}]);
+//# sourceMappingURL=component---src-pages-resume-pdf-js-73c5e8634c5d9facf0a5.js.map
