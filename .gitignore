@@ -14,4 +14,4 @@ public/
 !.yarn/sdks
 !.yarn/versions
 
-value-linter-styles/
+.vscode/
